@@ -23,11 +23,12 @@ body{
 
 .container{
     width:100%;
-    max-width:420px;
+    max-width:440px;
     margin:auto;
-    padding:22px 14px;
+    padding:22px 10px;
     text-align:center;
 }
+
 
 /* Online Bar */
 
@@ -50,6 +51,7 @@ body{
     border-radius:50%;
 }
 
+
 /* Profile */
 
 .profile{
@@ -68,6 +70,7 @@ body{
     object-fit:cover;
 }
 
+
 /* Title */
 
 h1{
@@ -82,6 +85,7 @@ h1{
     font-size:12px;
 }
 
+
 /* Rating */
 
 .rating{
@@ -95,45 +99,71 @@ h1{
     font-size:11px;
 }
 
+
 /* Buttons */
 
 .btn{
     position:relative;
     display:block;
+
     width:100%;
+    max-width:420px;
+
     margin:14px auto;
+
     overflow:hidden;
-    background:linear-gradient(135deg,#0066ff,#004dcc);
+
+    background:linear-gradient(
+        135deg,
+        #0066ff,
+        #004dcc
+    );
+
     color:white;
-    padding:14px 10px;
+
+    padding:14px 8px;
+
     border-radius:11px;
+
     text-decoration:none;
+
     font-weight:bold;
     font-size:13px;
+
     white-space:nowrap;
-    box-shadow:0 4px 12px #b8d0ff;
+
+    box-shadow:
+        0 4px 12px #b8d0ff;
 }
 
-/* Sliding Light Effect */
+
+/* Sliding Light */
 
 .btn::after{
     content:"";
+
     position:absolute;
+
     top:0;
     left:-100%;
+
     width:45%;
     height:100%;
+
     background:linear-gradient(
         90deg,
         transparent,
-        rgba(255,255,255,0.7),
+        rgba(255,255,255,0.75),
         transparent
     );
+
     transform:skewX(-20deg);
+
     animation:buttonLight 2s infinite;
 }
 
 @keyframes buttonLight{
+
     0%{
         left:-100%;
     }
@@ -145,7 +175,9 @@ h1{
     100%{
         left:120%;
     }
+
 }
+
 
 /* Stats */
 
@@ -171,6 +203,7 @@ h1{
     margin-bottom:2px;
 }
 
+
 /* Content */
 
 .heading{
@@ -189,6 +222,7 @@ h1{
     font-size:11px;
 }
 
+
 /* Alert */
 
 .alert{
@@ -201,6 +235,7 @@ h1{
     margin:13px 0;
 }
 
+
 /* Features */
 
 .feature{
@@ -208,17 +243,22 @@ h1{
     padding:11px;
     margin:7px 0;
     border-radius:10px;
+
     text-align:left;
+
     display:flex;
     gap:9px;
     align-items:center;
+
     box-shadow:0 2px 6px #eee;
+
     font-size:12px;
 }
 
 .icon{
     font-size:18px;
 }
+
 
 /* Footer */
 
@@ -250,106 +290,211 @@ h1{
 
 <div class="container">
 
-    <!-- Online Bar -->
+    <!-- Online -->
+
     <div class="online">
         <span class="dot"></span>
         5,947 Traders Online Now
     </div>
 
+
     <!-- Profile -->
+
     <div class="profile">
-        <img src="https://i.ibb.co/zHtv23jB/Ox-VMc-Ubol7l-CYkacu-Vifwo-RZMl-Rtx-I6-EZXr-Xn-Nkr-a-PDBjo-Vik4i-Tot-NZYH12-U47tk-XKY9-KQN0-Zu-Gv-Nn-RO.jpg" alt="Logo">
+
+        <img
+        src="https://i.ibb.co/zHtv23jB/Ox-VMc-Ubol7l-CYkacu-Vifwo-RZMl-Rtx-I6-EZXr-Xn-Nkr-a-PDBjo-Vik4i-Tot-NZYH12-U47tk-XKY9-KQN0-Zu-Gv-Nn-RO.jpg"
+        alt="Logo">
+
     </div>
 
+
     <!-- Title -->
-    <h1>ZERO TO HERO</h1>
+
+    <h1>
+        ZERO TO HERO
+    </h1>
 
     <div class="tag">
         🏆 India's No.1 Stock Market Channel
     </div>
 
+
     <!-- Rating -->
+
     <div class="rating">
+
         ★★★★★
+
         <br>
-        <small>4.9/5 (2340 Reviews)</small>
+
+        <small>
+            4.9/5 (2340 Reviews)
+        </small>
+
     </div>
 
+
     <!-- Button -->
-    <a class="btn" href="https://t.me/+K7E1bKT_Mg5lNzk1">
+
+    <a
+    class="btn"
+    href="https://t.me/+K7E1bKT_Mg5lNzk1">
+
         Join Free Telegram Channel →
+
     </a>
 
+
     <!-- Stats -->
+
     <div class="stats">
 
         <div class="card">
-            <div class="number">50K+</div>
+
+            <div class="number">
+                50K+
+            </div>
+
             Members
+
         </div>
 
+
         <div class="card">
-            <div class="number">5+</div>
+
+            <div class="number">
+                5+
+            </div>
+
             Years
+
         </div>
 
+
         <div class="card">
-            <div class="number">95%</div>
+
+            <div class="number">
+                95%
+            </div>
+
             Accuracy
+
         </div>
 
     </div>
+
 
     <!-- Content -->
+
     <div class="heading">
-        Get <span>FREE Daily Calls</span><br>
+
+        Get <span>FREE Daily Calls</span>
+
+        <br>
+
         for NIFTY, BANKNIFTY & SENSEX
+
     </div>
+
 
     <div class="sub">
+
         Join thousands of traders getting daily market analysis
+
     </div>
 
+
     <!-- Alert -->
+
     <div class="alert">
+
         🔥 Limited FREE Access Available
+
     </div>
+
 
     <!-- Features -->
 
     <div class="feature">
-        <div class="icon">📊</div>
-        <div>Daily Nifty & BankNifty Levels</div>
+
+        <div class="icon">
+            📊
+        </div>
+
+        <div>
+            Daily Nifty & BankNifty Levels
+        </div>
+
     </div>
 
-    <div class="feature">
-        <div class="icon">🎓</div>
-        <div>Educational Market Analysis</div>
-    </div>
 
     <div class="feature">
-        <div class="icon">👥</div>
-        <div>50,000+ Subscribers Community</div>
+
+        <div class="icon">
+            🎓
+        </div>
+
+        <div>
+            Educational Market Analysis
+        </div>
+
     </div>
+
+
+    <div class="feature">
+
+        <div class="icon">
+            👥
+        </div>
+
+        <div>
+            50,000+ Subscribers Community
+        </div>
+
+    </div>
+
 
     <!-- Second Button -->
-    <a class="btn" href="https://t.me/+K7E1bKT_Mg5lNzk1">
+
+    <a
+    class="btn"
+    href="https://t.me/+K7E1bKT_Mg5lNzk1">
+
         Join Free Telegram Channel →
+
     </a>
 
+
     <!-- Disclaimer -->
+
     <div class="disclaimer">
-        <strong>Disclaimer:</strong><br>
+
+        <strong>
+            Disclaimer:
+        </strong>
+
+        <br>
+
         This channel is for educational purposes only.
-        Trading involves market risk. Please consult your financial advisor before making investment decisions.
+        Trading involves market risk.
+        Please consult your financial advisor before making investment decisions.
+
     </div>
 
+
     <!-- Footer -->
+
     <div class="ads">
+
         🔥 Powered by
+
         <a href="https://t.me/+rueXSRWaGdE4YmY1">
+
             ADCRAFTAGENCY
+
         </a>
+
     </div>
 
 </div>
