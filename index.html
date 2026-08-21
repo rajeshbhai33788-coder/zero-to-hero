@@ -23,30 +23,30 @@ body{
 
 .container{
     width:100%;
-    max-width:460px;
+    max-width:420px;
     margin:auto;
-    padding:35px 16px;
+    padding:22px 14px;
     text-align:center;
 }
 
 
-/* Online bar */
+/* Online Bar */
 
 .online{
     display:inline-flex;
     align-items:center;
-    gap:8px;
+    gap:6px;
     background:#e8f5e9;
     color:#218739;
-    padding:8px 20px;
+    padding:6px 14px;
     border-radius:30px;
-    font-size:13px;
+    font-size:11px;
     font-weight:bold;
 }
 
 .dot{
-    width:8px;
-    height:8px;
+    width:7px;
+    height:7px;
     background:#22c55e;
     border-radius:50%;
 }
@@ -55,13 +55,13 @@ body{
 /* Profile */
 
 .profile{
-    width:120px;
-    height:120px;
+    width:100px;
+    height:100px;
     border-radius:50%;
-    margin:25px auto 10px;
+    margin:18px auto 8px;
     overflow:hidden;
-    border:4px solid white;
-    box-shadow:0 5px 20px #ddd;
+    border:3px solid white;
+    box-shadow:0 4px 15px #ddd;
 }
 
 .profile img{
@@ -71,23 +71,32 @@ body{
 }
 
 
+/* Title */
+
 h1{
-    font-size:23px;
-    margin:12px 0 5px;
+    font-size:20px;
+    margin:8px 0 3px;
     font-weight:800;
 }
 
 .tag{
     color:#0066ff;
     font-weight:bold;
-    font-size:14px;
+    font-size:12px;
 }
 
 
+/* Rating */
+
 .rating{
-    margin:15px;
+    margin:10px;
     color:#ff9800;
-    font-size:18px;
+    font-size:16px;
+}
+
+.rating small{
+    color:#777;
+    font-size:11px;
 }
 
 
@@ -97,12 +106,13 @@ h1{
     display:block;
     background:linear-gradient(135deg,#0066ff,#004dcc);
     color:white;
-    padding:16px;
-    border-radius:14px;
+    padding:13px 12px;
+    border-radius:11px;
     text-decoration:none;
     font-weight:bold;
-    margin:20px 0;
-    box-shadow:0 5px 15px #b8d0ff;
+    font-size:13px;
+    margin:14px 0;
+    box-shadow:0 4px 12px #b8d0ff;
 }
 
 
@@ -110,31 +120,33 @@ h1{
 
 .stats{
     display:flex;
-    gap:10px;
-    margin:20px 0;
+    gap:7px;
+    margin:14px 0;
 }
 
 .card{
     flex:1;
     background:white;
-    padding:15px 5px;
-    border-radius:14px;
-    box-shadow:0 3px 10px #eee;
+    padding:11px 4px;
+    border-radius:11px;
+    box-shadow:0 2px 7px #eee;
+    font-size:11px;
 }
 
 .number{
     color:#0066ff;
-    font-size:20px;
+    font-size:17px;
     font-weight:bold;
+    margin-bottom:2px;
 }
 
 
 /* Content */
 
 .heading{
-    font-size:17px;
+    font-size:15px;
     font-weight:bold;
-    line-height:1.5;
+    line-height:1.4;
 }
 
 .heading span{
@@ -143,19 +155,21 @@ h1{
 
 .sub{
     color:#777;
-    margin:10px;
-    font-size:13px;
+    margin:7px;
+    font-size:11px;
 }
 
+
+/* Alert */
 
 .alert{
     background:#fff3e0;
     color:#e65100;
-    padding:12px;
-    border-radius:30px;
-    font-size:13px;
+    padding:9px;
+    border-radius:25px;
+    font-size:11px;
     font-weight:bold;
-    margin:20px 0;
+    margin:13px 0;
 }
 
 
@@ -163,28 +177,29 @@ h1{
 
 .feature{
     background:white;
-    padding:15px;
-    margin:10px 0;
-    border-radius:12px;
+    padding:11px;
+    margin:7px 0;
+    border-radius:10px;
     text-align:left;
     display:flex;
-    gap:12px;
+    gap:9px;
     align-items:center;
-    box-shadow:0 2px 8px #eee;
+    box-shadow:0 2px 6px #eee;
+    font-size:12px;
 }
 
 .icon{
-    font-size:22px;
+    font-size:18px;
 }
 
 
 /* Footer */
 
 .ads{
-    margin-top:35px;
-    padding:18px;
+    margin-top:22px;
+    padding:13px;
     border-top:1px solid #ddd;
-    font-size:13px;
+    font-size:11px;
     color:#777;
 }
 
@@ -195,141 +210,144 @@ h1{
 }
 
 .disclaimer{
-    margin-top:20px;
-    font-size:10px;
+    margin-top:14px;
+    font-size:9px;
     color:#999;
-    line-height:1.5;
+    line-height:1.4;
 }
 
 </style>
 
 </head>
 
-
 <body>
 
 <div class="container">
 
+    <!-- Online Bar -->
+    <div class="online">
+        <span class="dot"></span>
+        5,947 Traders Online Now
+    </div>
 
-<div class="online">
-<span class="dot"></span>
-5,947 Traders Online Now
+
+    <!-- Profile -->
+    <div class="profile">
+        <img src="https://i.ibb.co/zHtv23jB/Ox-VMc-Ubol7l-CYkacu-Vifwo-RZMl-Rtx-I6-EZXr-Xn-Nkr-a-PDBjo-Vik4i-Tot-NZYH12-U47tk-XKY9-KQN0-Zu-Gv-Nn-RO.jpg" alt="Logo">
+    </div>
+
+
+    <!-- Title -->
+    <h1>
+        ZERO TO HERO
+    </h1>
+
+    <div class="tag">
+        🏆 India's No.1 Stock Market Channel
+    </div>
+
+
+    <!-- Rating -->
+    <div class="rating">
+        ★★★★★
+        <br>
+        <small>
+            4.9/5 (2340 Reviews)
+        </small>
+    </div>
+
+
+    <!-- Button -->
+    <a class="btn" href="https://t.me/+K7E1bKT_Mg5lNzk1">
+        Join Free Telegram Channel →
+    </a>
+
+
+    <!-- Stats -->
+    <div class="stats">
+
+        <div class="card">
+            <div class="number">50K+</div>
+            Members
+        </div>
+
+        <div class="card">
+            <div class="number">5+</div>
+            Years
+        </div>
+
+        <div class="card">
+            <div class="number">95%</div>
+            Accuracy
+        </div>
+
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="heading">
+        Get <span>FREE Daily Calls</span><br>
+        for NIFTY, BANKNIFTY & SENSEX
+    </div>
+
+    <div class="sub">
+        Join thousands of traders getting daily market analysis
+    </div>
+
+
+    <!-- Alert -->
+    <div class="alert">
+        🔥 Limited FREE Access Available
+    </div>
+
+
+    <!-- Features -->
+
+    <div class="feature">
+        <div class="icon">📊</div>
+        <div>Daily Nifty & BankNifty Levels</div>
+    </div>
+
+    <div class="feature">
+        <div class="icon">🎓</div>
+        <div>Educational Market Analysis</div>
+    </div>
+
+    <div class="feature">
+        <div class="icon">👥</div>
+        <div>50,000+ Subscribers Community</div>
+    </div>
+
+
+    <!-- Second Button -->
+    <a class="btn" href="https://t.me/+K7E1bKT_Mg5lNzk1">
+        Join Free Telegram Channel →
+    </a>
+
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+
+        <strong>Disclaimer:</strong><br>
+
+        This channel is for educational purposes only.
+        Trading involves market risk. Please consult your financial advisor before making investment decisions.
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class="ads">
+
+        🔥 Powered by
+
+        <a href="https://t.me/+rueXSRWaGdE4YmY1">
+            ADCRAFTAGENCY
+        </a>
+
+    </div>
+
 </div>
-
-
-<div class="profile">
-<img src="https://i.ibb.co/zHtv23jB/Ox-VMc-Ubol7l-CYkacu-Vifwo-RZMl-Rtx-I6-EZXr-Xn-Nkr-a-PDBjo-Vik4i-Tot-NZYH12-U47tk-XKY9-KQN0-Zu-Gv-Nn-RO.jpg" alt="Logo">
-</div>
-
-
-<h1>ZERO TO HERO<br>
-
-<div class="tag">
-🏆 India's No.1 Stock Market Channel
-</div>
-
-
-<div class="rating">
-★★★★★
-<br>
-<small style="color:#777">
-4.9/5 (2340 Reviews)
-</small>
-</div>
-
-
-
-<a class="btn" href="https://t.me/+K7E1bKT_Mg5lNzk1">
-Join Free Telegram Channel →
-</a>
-
-
-
-<div class="stats">
-
-<div class="card">
-<div class="number">50K+</div>
-Members
-</div>
-
-<div class="card">
-<div class="number">5+</div>
-Years
-</div>
-
-<div class="card">
-<div class="number">95%</div>
-Accuracy
-</div>
-
-</div>
-
-
-
-<div class="heading">
-Get <span>FREE Daily Calls</span><br>
-for NIFTY, BANKNIFTY & SENSEX
-</div>
-
-
-<div class="sub">
-Join thousands of traders getting daily market analysis
-</div>
-
-
-<div class="alert">
-🔥 Limited FREE Access Available
-</div>
-
-
-
-<div class="feature">
-<div class="icon">📊</div>
-Daily Nifty & BankNifty Levels
-</div>
-
-
-<div class="feature">
-<div class="icon">🎓</div>
-Educational Market Analysis
-</div>
-
-
-<div class="feature">
-<div class="icon">👥</div>
-50,000+ Subscribers Community
-</div>
-
-
-<a class="btn" href="https://t.me/+K7E1bKT_Mg5lNzk1">
-Join Free Telegram Channel →
-</a>
-
-
-
-<div class="disclaimer">
-
-<strong>Disclaimer:</strong><br>
-This channel is for educational purposes only.
-Trading involves market risk. Please consult your financial advisor before making investment decisions.
-
-</div>
-
-
-
-<div class="ads">
-
-🔥 Powered by
-
-<a href="https://t.me/+rueXSRWaGdE4YmY1">
-ADCRAFTAGENCY
-</a>
-
-</div>
-
-
-</div>
-
 
 </body>
 </html>
