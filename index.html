@@ -103,7 +103,9 @@ h1{
 /* Buttons */
 
 .btn{
+    position:relative;
     display:block;
+    overflow:hidden;
     background:linear-gradient(135deg,#0066ff,#004dcc);
     color:white;
     padding:13px 12px;
@@ -113,6 +115,39 @@ h1{
     font-size:13px;
     margin:14px 0;
     box-shadow:0 4px 12px #b8d0ff;
+}
+
+/* Sliding Light Effect */
+
+.btn::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:45%;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.7),
+        transparent
+    );
+    transform:skewX(-20deg);
+    animation:buttonLight 2s infinite;
+}
+
+@keyframes buttonLight{
+    0%{
+        left:-100%;
+    }
+
+    45%{
+        left:120%;
+    }
+
+    100%{
+        left:120%;
+    }
 }
 
 
