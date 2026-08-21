@@ -105,18 +105,35 @@ h1{
 .btn{
     position:relative;
     display:block;
-    width:calc(100% + 12px);
-    margin:14px -6px;
+
+    width:100%;
+    max-width:420px;
+
+    margin:14px auto;
+
     overflow:hidden;
-    background:linear-gradient(135deg,#0066ff,#004dcc);
+
+    background:linear-gradient(
+        135deg,
+        #0066ff,
+        #004dcc
+    );
+
     color:white;
+
     padding:14px 8px;
+
     border-radius:11px;
+
     text-decoration:none;
+
     font-weight:bold;
     font-size:13px;
+
     white-space:nowrap;
-    box-shadow:0 4px 12px #b8d0ff;
+
+    box-shadow:
+        0 4px 12px #b8d0ff;
 }
 
 
@@ -124,18 +141,24 @@ h1{
 
 .btn::after{
     content:"";
+
     position:absolute;
+
     top:0;
     left:-100%;
+
     width:45%;
     height:100%;
+
     background:linear-gradient(
         90deg,
         transparent,
         rgba(255,255,255,0.75),
         transparent
     );
+
     transform:skewX(-20deg);
+
     animation:buttonLight 2s infinite;
 }
 
@@ -152,6 +175,7 @@ h1{
     100%{
         left:120%;
     }
+
 }
 
 
@@ -219,11 +243,15 @@ h1{
     padding:11px;
     margin:7px 0;
     border-radius:10px;
+
     text-align:left;
+
     display:flex;
     gap:9px;
     align-items:center;
+
     box-shadow:0 2px 6px #eee;
+
     font-size:12px;
 }
 
@@ -262,7 +290,7 @@ h1{
 
 <div class="container">
 
-    <!-- Online Bar -->
+    <!-- Online -->
 
     <div class="online">
         <span class="dot"></span>
@@ -283,7 +311,9 @@ h1{
 
     <!-- Title -->
 
-    <h1>ZERO TO HERO</h1>
+    <h1>
+        ZERO TO HERO
+    </h1>
 
     <div class="tag">
         🏆 India's No.1 Stock Market Channel
@@ -305,7 +335,7 @@ h1{
     </div>
 
 
-    <!-- First Button -->
+    <!-- Button -->
 
     <a
     class="btn"
